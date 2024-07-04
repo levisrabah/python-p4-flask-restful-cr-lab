@@ -20,6 +20,12 @@ with app.app_context():
         image="./images/zz-plant.jpg",
         price=25.98,
     )
+    Red_Asoka = Plant(
+        id = 3,
+        name = "Red Asoka",
+        image = "./images/red-asoka.jpg",
+        price = 15.00,
+    )
 
     db.session.add_all([aloe, zz_plant])
     db.session.commit()
